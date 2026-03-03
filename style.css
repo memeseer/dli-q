@@ -1,0 +1,280 @@
+:root {
+    /* Основные цвета Dlicom */
+    --primary: #3B4CFF;
+    --accent: #316FFF;
+    --white: #FFFFFF;
+    --black: #000000;
+
+    /* Темный интерфейс премиум-класса */
+    --bg-dark: #020410;
+    --bg-card: rgba(255, 255, 255, 0.03);
+    --border-card: rgba(255, 255, 255, 0.08);
+    --text-main: #FFFFFF;
+    --text-secondary: rgba(255, 255, 255, 0.6);
+    --text-muted: rgba(255, 255, 255, 0.4);
+
+    /* Эффекты */
+    --glow: 0 0 30px rgba(59, 76, 255, 0.3);
+    --transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(-2deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(2deg);
+    }
+}
+
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Background mesh */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(59, 76, 255, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(49, 111, 255, 0.1) 0%, transparent 40%);
+    z-index: -1;
+}
+
+/* Header */
+.header {
+    padding: 4rem 2rem 6rem;
+    text-align: center;
+    position: relative;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo-main {
+    width: 100px;
+    height: auto;
+    margin-bottom: 2rem;
+    filter: drop-shadow(0 0 20px var(--primary));
+}
+
+.title-wrap {
+    margin-bottom: 3rem;
+}
+
+.header h1 {
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    font-weight: 800;
+    background: linear-gradient(to bottom, #fff, #888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 600;
+}
+
+.header-maskot {
+    position: absolute;
+    right: -100px;
+    top: 0;
+    width: 180px;
+    animation: float 8s ease-in-out infinite;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* Quotes Grid */
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    flex-grow: 1;
+}
+
+.quotes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 3rem;
+    padding-bottom: 8rem;
+}
+
+/* Quote Card */
+.quote-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: 32px;
+    padding: 3.5rem 3rem 3rem;
+    position: relative;
+    transition: all 0.5s var(--transition);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fadeIn 0.8s var(--transition) both;
+}
+
+.quote-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    border-color: rgba(59, 76, 255, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5), 0 0 30px rgba(59, 76, 255, 0.1);
+}
+
+.quote-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 2.5rem;
+    line-height: 1.4;
+    position: relative;
+    z-index: 1;
+}
+
+.quote-author {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.author-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 20px;
+    object-fit: cover;
+    background: var(--bg-card);
+    border: 2px solid var(--border-card);
+    transition: all 0.3s var(--transition);
+}
+
+.quote-card:hover .author-avatar {
+    border-color: var(--primary);
+    transform: rotate(-3deg);
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.quote-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.quote-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    text-decoration: none;
+    margin-left: auto;
+    transition: all 0.3s var(--transition);
+}
+
+.quote-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    padding: 6rem 2rem;
+    background: #000;
+    text-align: center;
+    border-top: 1px solid var(--border-card);
+}
+
+.footer-maskot {
+    width: 50px;
+    margin-bottom: 2rem;
+    opacity: 0.4;
+}
+
+.footer p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 900px) {
+    .header-maskot {
+        display: none;
+    }
+
+    .quotes-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .quote-card {
+        padding: 2.5rem 2rem 2rem;
+    }
+}
