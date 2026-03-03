@@ -2,7 +2,6 @@ name: Quote of Day
 
 on:
   schedule:
-    # каждый день в 09:00 UTC (поменяй как надо)
     - cron: "0 17 * * *"
   workflow_dispatch: {}
 
