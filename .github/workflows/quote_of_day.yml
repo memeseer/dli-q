@@ -2,7 +2,7 @@ name: Quote of Day
 
 on:
   schedule:
-    - cron: "0 17 * * 1"
+    - cron: "0 16 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -43,7 +43,7 @@ jobs:
           # SETTINGS
           QUOTE_LOOKBACK_HOURS: "24"
           QUOTE_LANG: "ru"
-          QUOTE_DRY_RUN: "0"
+          QUOTE_DRY_RUN: "1"
 
           # Output
           QUOTE_SELECTED_ONLY_ARCHIVE_PATH: "quotes_selected_only.json"
