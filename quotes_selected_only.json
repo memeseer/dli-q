@@ -116,5 +116,33 @@
       "score": 13.0,
       "shortlist_mode": "joke_gate"
     }
+  },
+  {
+    "schema": 1,
+    "generated_at": "2026-03-06T17:54:44.823509+00:00",
+    "since": "2026-03-05T17:54:44.823509+00:00",
+    "lookback_hours": 24,
+    "dry_run": true,
+    "selected": {
+      "message_id": "1479242225828499658",
+      "channel_id": "1471673873362718841",
+      "timestamp": "2026-03-05T22:20:29.629000+00:00",
+      "author_name": "dima kuncik",
+      "author_id": "1199818025822584922",
+      "author_avatar_url": "https://cdn.discordapp.com/avatars/1199818025822584922/22f6818cdc9f35140d377a40b76f372f.png?size=256",
+      "text": "Ору блять",
+      "text_raw": "Ору блять",
+      "is_ru": true,
+      "link": "https://discord.com/channels/1460130124598087712/1471673873362718841/1479242225828499658",
+      "why": "Смешная реакция на происходящее, добавляет комичный контекст.",
+      "tags": [
+        "угар",
+        "мем",
+        "кринж"
+      ],
+      "alt_quotes": [],
+      "score": 4.0,
+      "shortlist_mode": "joke_gate"
+    }
   }
 ]
