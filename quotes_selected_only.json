@@ -144,5 +144,33 @@
       "score": 4.0,
       "shortlist_mode": "joke_gate"
     }
+  },
+  {
+    "schema": 1,
+    "generated_at": "2026-03-07T16:53:31.560139+00:00",
+    "since": "2026-03-06T16:53:31.560139+00:00",
+    "lookback_hours": 24,
+    "dry_run": true,
+    "selected": {
+      "message_id": "1479814589209251844",
+      "channel_id": "1471673873362718841",
+      "timestamp": "2026-03-07T12:14:51.693000+00:00",
+      "author_name": "bnd",
+      "author_id": "1089900432270315610",
+      "author_avatar_url": "https://cdn.discordapp.com/avatars/1089900432270315610/21ce84e15684f9268fbb01b1fd3aa53c.png?size=256",
+      "text": "сук реально вокзалы и метро Москвы ахаха",
+      "text_raw": "сук реально вокзалы и метро Москвы ахаха",
+      "is_ru": true,
+      "link": "https://discord.com/channels/1460130124598087712/1471673873362718841/1479814589209251844",
+      "why": "Сравнение вокзалов и метро Москвы с чем-то смешным, вызывает образный и комичный эффект.",
+      "tags": [
+        "угар",
+        "мем",
+        "кринж"
+      ],
+      "alt_quotes": [],
+      "score": 8.0,
+      "shortlist_mode": "joke_gate"
+    }
   }
 ]
