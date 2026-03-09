@@ -200,5 +200,33 @@
       "score": 8.0,
       "shortlist_mode": "joke_gate"
     }
+  },
+  {
+    "schema": 1,
+    "generated_at": "2026-03-09T18:05:22.249215+00:00",
+    "since": "2026-03-08T18:05:22.249215+00:00",
+    "lookback_hours": 24,
+    "dry_run": true,
+    "selected": {
+      "message_id": "1480530109671669800",
+      "channel_id": "1471673873362718841",
+      "timestamp": "2026-03-09T11:38:05.065000+00:00",
+      "author_name": "zfrm 🐥",
+      "author_id": "244862047903285248",
+      "author_avatar_url": "https://cdn.discordapp.com/avatars/244862047903285248/dac3bf511c09c75d96a2b2e09d76418d.png?size=256",
+      "text": "въеби тёще 🤣",
+      "text_raw": "въеби тёще 🤣",
+      "is_ru": true,
+      "link": "https://discord.com/channels/1460130124598087712/1471673873362718841/1480530109671669800",
+      "why": "Смешная ситуация с тёщей вызывает улыбку.",
+      "tags": [
+        "угар",
+        "мем",
+        "шутка"
+      ],
+      "alt_quotes": [],
+      "score": 6.0,
+      "shortlist_mode": "joke_gate"
+    }
   }
 ]
