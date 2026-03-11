@@ -263,5 +263,40 @@
       "score": 6.0,
       "shortlist_mode": "joke_gate"
     }
+  },
+  {
+    "schema": 1,
+    "generated_at": "2026-03-11T18:11:06.406861+00:00",
+    "since": "2026-03-10T18:11:06.406861+00:00",
+    "lookback_hours": 24,
+    "dry_run": true,
+    "selected": {
+      "message_id": "1481034937351147653",
+      "channel_id": "1471673873362718841",
+      "timestamp": "2026-03-10T21:04:05.363000+00:00",
+      "author_name": "zfrm 🐥",
+      "author_id": "244862047903285248",
+      "author_avatar_url": "https://cdn.discordapp.com/avatars/244862047903285248/dac3bf511c09c75d96a2b2e09d76418d.png?size=256",
+      "text": "бывайте неудачники 🤣",
+      "text_raw": "бывайте неудачники 🤣",
+      "is_ru": true,
+      "link": "https://discord.com/channels/1460130124598087712/1471673873362718841/1481034937351147653",
+      "why": "Это прямой и абсурдный способ попрощаться с людьми, что вызывает смех.",
+      "tags": [
+        "угар",
+        "мем",
+        "токсичность"
+      ],
+      "alt_quotes": [
+        {
+          "message_id": "1481350696858288208"
+        },
+        {
+          "message_id": "1481343706324799671"
+        }
+      ],
+      "score": 6.0,
+      "shortlist_mode": "joke_gate"
+    }
   }
 ]
