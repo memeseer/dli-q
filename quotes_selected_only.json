@@ -360,5 +360,40 @@
       "score": 7.0,
       "shortlist_mode": "joke_gate"
     }
+  },
+  {
+    "schema": 1,
+    "generated_at": "2026-03-14T17:01:00.972935+00:00",
+    "since": "2026-03-13T17:01:00.972935+00:00",
+    "lookback_hours": 24,
+    "dry_run": true,
+    "selected": {
+      "message_id": "1482405211170537523",
+      "channel_id": "1471673873362718841",
+      "timestamp": "2026-03-14T15:49:04.100000+00:00",
+      "author_name": "Meki",
+      "author_id": "716935646077255680",
+      "author_avatar_url": "https://cdn.discordapp.com/avatars/716935646077255680/a68e36a363f78c83e6ccecd809f24f11.png?size=256",
+      "text": "не знаю,все ее только за грудь праймируют))))",
+      "text_raw": "не знаю,все ее только за грудь праймируют))))",
+      "is_ru": true,
+      "link": "https://discord.com/channels/1460130124598087712/1471673873362718841/1482405211170537523",
+      "why": "Потому что это забавная шутка о том, что людей интересует только внешность.",
+      "tags": [
+        "угар",
+        "кринж",
+        "мем"
+      ],
+      "alt_quotes": [
+        {
+          "message_id": "1482386225884303511"
+        },
+        {
+          "message_id": "1482394711724392468"
+        }
+      ],
+      "score": 7.0,
+      "shortlist_mode": "joke_gate"
+    }
   }
 ]
